@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+nav {
+    background-color: #FF7604;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 25px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li img {
+    width: 170px;
+    height: 170px;
+    margin-top: 25px;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+main p {
+    width: 45%;
+    text-align: center;
+}
+
+main #select {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+main #conteudo_rodadas .card-rodada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 2px solid orange;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+main #conteudo_rodadas .card-rodada h3 {
+    font-weight: bold;
+}
+
+main #conteudo_rodadas .card-rodada span {
+    font-weight: 300;
+}
+
+main #conteudo_rodadas .card-rodada img {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    background-color: #D96300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+footer #nome_footer, footer #por_footer {
+    color: white;
+}
+
+footer hr {
+    width: 60%;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
