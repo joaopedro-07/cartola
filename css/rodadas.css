@@ -100,3 +100,27 @@ footer a {
     text-decoration: none;
     color: black;
 }
+
+#modal_adicionar_rodada {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    /* box-shadow: 2px black; */
+}
+
+#modal_adicionar_partida {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    /* box-shadow: 2px black; */
+}

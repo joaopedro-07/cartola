@@ -47,8 +47,8 @@
         <div id="conteudo_rodadas">
             <?php include 'conteudo_rodadas.php'; ?>
         </div>
-        <button>Adicionar rodada</button>
-        <button>Adicionar partidas</button>
+        <button onclick=adicionar_rodada()>Adicionar rodada</button>
+        <button onclick=adicionar_partida()>Adicionar partidas</button>
         <script>
             document.getElementById("seletor").addEventListener("change", function() {
                 let opcao = this.value;
@@ -59,7 +59,47 @@
                 };
                 xhr.send();
             });
+            function adicionar_rodada() {
+                document.getElementById("modal_adicionar_rodada").style.display = "flex";
+            }
+            function adicionar_partida() {
+                document.getElementById("modal_adicionar_partida").style.display = "flex";
+            }
+            function fechar_modal_rodada() {
+                document.getElementById("modal_adicionar_rodada").style.display = "none";
+            }
+            function fechar_modal_partida() {
+                document.getElementById("modal_adicionar_partida").style.display = "none";
+            }
         </script>
+
+        <div id="modal_adicionar_rodada">
+            <button class="fechar" onclick=fechar_modal_rodada()>Fechar</button>
+            <h2>Adicionar rodada</h2>
+            <p>Adicione uma nova rodada, onde posteriormente poderá</p>
+            <label for="">Nº</label>
+            <select name="" id="">
+                <option value="">Teste</option>
+            </select>
+            <label for="">Data de início:</label>
+            <input type="date">
+            <label for="">Data de término:</label>
+            <input type="date">
+        </div>
+
+        <div id="modal_adicionar_partida">
+            <button class="fechar" onclick=fechar_modal_partida()>Fechar</button>
+            <h2>Adicionar partida</h2>
+            <p>Adicione uma nova rodada, onde posteriormente poderá</p>
+            <label for="">Nº</label>
+            <select name="" id="">
+                <option value="">Teste</option>
+            </select>
+            <label for="">Data de início:</label>
+            <input type="date">
+            <label for="">Data de término:</label>
+            <input type="date">
+        </div>
     </main>
     <footer>
         <h3 id='nome_footer'>© Cartola DB<br></h3>
